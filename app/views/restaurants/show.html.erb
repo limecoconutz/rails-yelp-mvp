@@ -1,0 +1,10 @@
+  <h1>Create a new restaurant:</h1>
+  
+  <h2><%=@restaurant.name%></h2>
+  <h3>Located in: <%=@restaurant.address%> </h3>
+  <h3>Phone: <%=@restaurant.phone_number%></h3>
+  <h4>Category: <%=@restaurant.category%></h4>
+
+        <i class="fas fa-redo"></i>
+      <%= link_to ' back', restaurants_path%>
+      <%= link_to  " add a review", new_restaurant_review_path(@restaurant) %>

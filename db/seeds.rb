@@ -15,10 +15,10 @@ puts "Creating restaurants..."
 
 20.times do
   restaurant = Restaurant.create!(
-    name: Faker::TvShows::TwinPeaks.location,
+    name: Faker::Restaurant.name,
     address: Faker::Movies::LordOfTheRings.location,
     phone_number: Faker::PhoneNumber.phone_number_with_country_code,
-    category: w%("chinese", "italian", "japanese", "french", "belgian").sample
+    category: %w(chinese italian japanese french belgian).sample
   )
   puts "Created #{restaurant.name}"
 end
