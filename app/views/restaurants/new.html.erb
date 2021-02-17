@@ -1,7 +1,17 @@
-<%= simple_form_for(@restaurant) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :address %>
-  <%= f.input :phone_number %>
-  <%= f.input :category, collection: Restaurant::CATEGORIES %>
-  <%= f.submit %>
-<% end %>
+    <div class="navbar-lewagon">
+          <div class="navbar-item">
+            <i class="fas fa-redo"></i>
+              <%= link_to ' back', restaurants_path%>
+          </div>
+    </div>
+  
+  <h1>Create a new restaurant:</h1>
+  <div class="box">
+      <%= simple_form_for(@restaurant) do |f| %>
+        <%= f.input :name %>
+        <%= f.input :address %>
+        <%= f.input :phone_number %>
+        <%= f.input :category, collection: Restaurant::CATEGORIES %>
+        <%= f.submit :class => 'submit-button' %>
+      <% end %>
+  </div>

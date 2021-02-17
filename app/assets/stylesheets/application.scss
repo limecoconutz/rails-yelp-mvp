@@ -1,0 +1,91 @@
+// app/assets/stylesheets/application.scss
+// Graphical variables
+// @import "config/fonts";
+// @import "config/colors";
+// @import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap"; // from the node_modules
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// // Your CSS partials
+// @import 'components/navbar.scss';
+// @import "pages/index";
+
+$background-color: #ECE2D0;
+$font-color: #26547C;
+// $button: linear-gradient(to right,#ECE2D0,#7FD1B9, #8C86AA, #D64933) ;
+$button-hover: #3782c3;
+
+body{
+  color: $font-color;
+  background-color: #ECE2D0;
+  .navbar-lewagon {
+  background-color: #7FD1B9;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    a{
+      text-decoration: none;
+      color: $font-color;
+    }
+  }
+.navbar-item{
+  margin: 5px;
+  padding: 3px;
+}
+
+.box{
+  background-image: url('https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  background-size: cover;
+  margin: 15px;
+  padding: 15px;
+  box-shadow: 5px 5px 5px 5px #d1cbbe;
+}
+
+h1{
+  padding: 10px;
+}
+
+ul >li > a{
+  font-size: large;
+  text-decoration: none;
+  color: $font-color;
+}
+
+.form-group{
+  margin: 30px;
+  padding: 15px;
+}
+
+.form-control{
+  height: 60px;
+  width: 450px;
+  border: solid 1px $font-color;
+}
+
+.form-box{
+  background-image: url('https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  background-size: cover;
+  background-size: cover;
+  margin: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 5px #d1cbbe;
+}
+
+.submit-button{
+  background-color: #7FD1B9;
+  color: $font-color;
+  border: solid  1px $font-color;
+  border-radius: 15px;
+  height: 45px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.submit-button:hover{
+  background-color: $button-hover;
+}
+}

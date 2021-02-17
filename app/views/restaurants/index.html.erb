@@ -1,7 +1,22 @@
-<h1>All Restaurants:</h1>
-<%@restaurants.each do |restaurant|%>
-<ul><li><%=link_to restaurant.name, restaurant_path(restaurant)%></li></ul>
-<%end%>
+   <div class="navbar-lewagon">
+            <div class="navbar-item">
+                  <i class="fas fa-redo"></i>
+                  <%= link_to ' back', restaurants_path%>
+            </div>
+            <div class="navbar-item">
+                <i class="fas fa-edit"></i>
+                <%= link_to 'Create new restaurant',new_restaurant_path %>
+            </div>
+    </div>
+<div class="box">
+  <h1>All Restaurants:</h1>
+  <%@restaurants.each do |restaurant|%>
+  <ul><li>
+      <i class="fas fa-caret-right"></i>
+      <%=link_to restaurant.name, restaurant_path(restaurant)%>
+  </li></ul>
+  <%end%>
+</div>
 
-<%= link_to 'Create new restaurant',new_restaurant_path %>
+
   
